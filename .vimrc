@@ -29,12 +29,12 @@ autocmd FileType python set sw=4
 autocmd FileType python set ts=4
 autocmd FileType python set sts=4
 
-" --- Enable folding
 set foldmethod=indent
 set foldlevel=99
 set nocompatible
 set number
 set background=dark
+set cindent
 
 syntax on
 filetype indent plugin on
@@ -47,10 +47,17 @@ let g:ycm_seed_identifiers_with_syntax = 1	" Completion for programming language
 let g:ycm_complete_in_comments = 1	" Completion in comments
 let g:ycm_complete_in_strings = 1	" Completion in string
 
-let NERDTreeIgnore = ['\.pyc$', '\.egg-info$', '__pycache__', '__pycache__']
+" --- YouCompleteMe; Default c-family compile flags
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+
+let g:NERDTreeIgnore = ['\.pyc$', '\.egg-info$', '__pycache__', '__pycache__']
+let g:NERDTreeWinPos = "left"
 
 set wildignore+=*.pyc
 set wildignore+=*__pycache__
 
-
-
+" --- Easy Bracket, Parens & Braces
+inoremap ( ()<Esc>i
+inoremap { {<CR><CR>}<Esc>ki
+inoremap [ []<Esc>i
+inoremap <C-e> <Esc>$i
