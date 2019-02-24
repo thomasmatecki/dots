@@ -1,3 +1,15 @@
 *
 
-!.*
+# confs
+!.tmux.conf
+!.vimrc
+!.emacs
+
+# libs etc
+!.vim/
+!.tmux-themepack/
+
+# git
+!.gitignore
+!.gitmodules
+
