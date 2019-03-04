@@ -12,7 +12,12 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'chrisbra/csv.vim'
+Plugin 'SkyLeach/pudb.vim'
 call vundle#end()
+
+" --- 
+nnoremap <Space> a_<Esc>r
 
 " --- Tab Navgation
 nnoremap <C-S-tab> :tabprevious<CR>
@@ -35,10 +40,12 @@ set nocompatible
 set number
 set background=dark
 set cindent
+set backspace=indent,eol,start   "  Make backspace work better 
 
 syntax on
 filetype indent plugin on
 colorscheme palenight
+hi Visual term=reverse cterm=reverse guibg=Grey
 
 " --- YouCompleteMe; As recommended for django.
 let g:ycm_collect_identifiers_from_tags_files = 1 	" Let YCM read tags from Ctags file

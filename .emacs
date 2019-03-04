@@ -1,4 +1,4 @@
- (require 'package)
+(require 'package)
   (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
   (package-initialize)
 
@@ -21,11 +21,12 @@
  ;; If there is more than one, they won't work right.
  )
 
+(add-to-list 'load-path "~/.emacs.d/evil")
 (require 'evil)
 (require 'color-theme-sanityinc-tomorrow)
 (evil-mode 1)
 (global-linum-mode t) 
-(rainbow-delimiters-mode t)
+;;(rainbow-delimiters-mode t)
 
 
  ;; Navigate between panes like vim
