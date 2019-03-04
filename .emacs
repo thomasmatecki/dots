@@ -1,6 +1,7 @@
 (require 'package)
   (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
   (package-initialize)
+)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -13,7 +14,7 @@
     ("82d2cac368ccdec2fcc7573f24c3f79654b78bf133096f9b40c20d97ec1d8016" default)))
  '(package-selected-packages
    (quote
-    (color-theme-sanityinc-tomorrow rainbow-delimiters evil borland-blue-theme))))
+    (company paredit git-gutter git-messenger geiser color-theme-sanityinc-tomorrow rainbow-delimiters evil borland-blue-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
