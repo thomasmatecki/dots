@@ -3,7 +3,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 " --- Plugins
 call vundle#begin()
 Plugin 'Vundle/Vundle.vim'
-" Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'drewtempelmeyer/palenight.vim'
 Plugin 'vim-scripts/indentpython.vim'
