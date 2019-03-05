@@ -14,7 +14,16 @@
     ("82d2cac368ccdec2fcc7573f24c3f79654b78bf133096f9b40c20d97ec1d8016" default)))
  '(package-selected-packages
    (quote
-    (company paredit git-gutter git-messenger geiser color-theme-sanityinc-tomorrow rainbow-delimiters evil borland-blue-theme))))
+    (company
+     paredit
+     git-gutter
+     git-messenger
+     geiser
+     color-theme-sanityinc-tomorrow
+     rainbow-delimiters
+     evil
+     borland-blue-theme))))
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -29,8 +38,7 @@
 (global-linum-mode t) 
 ;;(rainbow-delimiters-mode t)
 
-
- ;; Navigate between panes like vim
+;; Navigate between panes like vim
 (global-set-key (kbd "C-l") 'windmove-right)
 (global-set-key (kbd "C-h") 'windmove-left)
 (global-set-key (kbd "C-j") 'windmove-down)
