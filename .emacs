@@ -1,7 +1,8 @@
 (require 'package)
-  (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
-  (package-initialize)
-)
+
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+(package-initialize)
+
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -12,6 +13,7 @@
  '(custom-safe-themes
    (quote
     ("82d2cac368ccdec2fcc7573f24c3f79654b78bf133096f9b40c20d97ec1d8016" default)))
+
  '(package-selected-packages
    (quote
     (company
