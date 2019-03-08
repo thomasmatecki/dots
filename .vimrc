@@ -24,6 +24,7 @@ nnoremap <C-S-tab> :tabprevious<CR>
 nnoremap <C-tab>   :tabnext<CR>
 nnoremap <C-t>     :tabnew<CR>
 
+let g:BASH_Ctrl_j = 'off' " --- makc c-j work; don't insert 0x0A
 " --- Switch Panes
 nnoremap <C-j> <C-W><C-j>
 nnoremap <C-k> <C-W><C-k>
