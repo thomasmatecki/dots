@@ -14,6 +14,7 @@ Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'chrisbra/csv.vim'
 Plugin 'SkyLeach/pudb.vim'
+Plugin 'rust-lang/rust.vim'
 call vundle#end()
 
 " --- 
@@ -23,6 +24,7 @@ nnoremap <Space> a_<Esc>r
 nnoremap <C-S-tab> :tabprevious<CR>
 nnoremap <C-tab>   :tabnext<CR>
 nnoremap <C-t>     :tabnew<CR>
+
 
 let g:BASH_Ctrl_j = 'off' " --- makc c-j work; don't insert 0x0A
 " --- Switch Panes
@@ -66,6 +68,6 @@ set wildignore+=*__pycache__
 
 " --- Easy Bracket, Parens & Braces
 inoremap ( ()<Esc>i
-inoremap { {<CR><CR>}<Esc>ki
+inoremap { {}<Esc>i
 inoremap [ []<Esc>i
-inoremap <C-e> <Esc>$i
+inoremap <C-e> <Esc>$a
