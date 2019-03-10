@@ -38,10 +38,13 @@
 (require 'color-theme-sanityinc-tomorrow)
 (evil-mode 1)
 (global-linum-mode t) 
-;;(rainbow-delimiters-mode t)
+
+(rainbow-delimiters-mode t)
 
 ;; Navigate between panes like vim
 (global-set-key (kbd "C-l") 'windmove-right)
 (global-set-key (kbd "C-h") 'windmove-left)
 (global-set-key (kbd "C-j") 'windmove-down)
 (global-set-key (kbd "C-k") 'windmove-up)
+
+(setq load-path (cons "usr/local/share/mdk" load-path))
