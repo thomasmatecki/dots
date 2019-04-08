@@ -13,7 +13,6 @@ Plugin 'nvie/vim-flake8'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'chrisbra/csv.vim'
-Plugin 'SkyLeach/pudb.vim'
 Plugin 'rust-lang/rust.vim'
 call vundle#end()
 
@@ -45,6 +44,10 @@ set background=dark
 set cindent
 set backspace=indent,eol,start   "  Make backspace work better 
 
+if (has("termguicolors"))
+  set termguicolors
+endif
+
 syntax on
 filetype indent plugin on
 colorscheme palenight
@@ -63,11 +66,17 @@ let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 let g:NERDTreeIgnore = ['\.pyc$', '\.egg-info$', '__pycache__', '__pycache__']
 let g:NERDTreeWinPos = "left"
 
+" let g;pudb_python_launcher = 
+
 set wildignore+=*.pyc
 set wildignore+=*__pycache__
 
 " --- Easy Bracket, Parens & Braces
-inoremap ( ()<Esc>i
-inoremap { {}<Esc>i
+" inoremap ( ()<Esc>i 
+" inoremap { {<CR><CR>}<Esc>ki
 inoremap [ []<Esc>i
-inoremap <C-e> <Esc>$a
+inoremap <C-e> <Esc>$i
+
+" If you're line is longer than 80 chars, you're a punk.
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
