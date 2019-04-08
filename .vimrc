@@ -10,14 +10,27 @@ Plugin 'vim-scripts/indentpython.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'vim-airline/vim-airline'
 Plugin 'chrisbra/csv.vim'
 Plugin 'rust-lang/rust.vim'
+Plugin 'SirVer/ultisnips'
 call vundle#end()
+
+" ---
+let g:UltiSnipsExpandTrigger="<c-s>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " --- 
 nnoremap <Space> a_<Esc>r
+
+" --- Buffer Navigation
+nnoremap <C-n>	:bn<CR>
+nnoremap <C-p>	:bp<CR>
+"  nnoremap <C-tab>   :tabnext<CR>
+"  nnoremap <C-t>     :tabnew<CR>
+
 
 " --- Tab Navgation
 nnoremap <C-S-tab> :tabprevious<CR>
@@ -45,6 +58,8 @@ set cindent
 set backspace=indent,eol,start   "  Make backspace work better 
 
 if (has("termguicolors"))
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
   set termguicolors
 endif
 
@@ -80,3 +95,6 @@ inoremap <C-e> <Esc>$i
 " If you're line is longer than 80 chars, you're a punk.
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
+
+set tags=tags;/
+let g:airline#extensions#tabline#enabled=1
