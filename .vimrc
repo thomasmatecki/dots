@@ -14,7 +14,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'vim-airline/vim-airline'
 Plugin 'chrisbra/csv.vim'
 Plugin 'rust-lang/rust.vim'
-Plugin 'SirVer/ultisnips'
+" Plugin 'SirVer/ultisnips'
 call vundle#end()
 
 " ---
