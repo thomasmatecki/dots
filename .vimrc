@@ -18,12 +18,18 @@ Plugin 'posva/vim-vue'
 Plugin 'pangloss/vim-javascript'
 Plugin 'google/yapf', { 'rtp': 'plugins/vim' }
 " Plugin 'SirVer/ultisnips'
+Plugin 'SkyLeach/pudb.vim'
+Plugin 'google/yapf', { 'rtp': 'plugins/vim' }
 call vundle#end()
 
 " ---
 let g:UltiSnipsExpandTrigger="<c-s>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" --- YAPF formatter
+map <C-Y> :call yapf#YAPF()<cr>
+imap <C-Y> <c-o>:call yapf#YAPF()<cr>
 
 " --- 
 nnoremap <Space> a_<Esc>r
@@ -109,3 +115,5 @@ match OverLength /\%81v.\+/
 
 set tags=tags;/
 let g:airline#extensions#tabline#enabled=1
+let g:ycm_server_python_interpreter='/usr/local/bin/python'
+set tags=tags
