@@ -15,6 +15,8 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'chrisbra/csv.vim'
 Plugin 'rust-lang/rust.vim'
 Plugin 'posva/vim-vue'
+Plugin 'pangloss/vim-javascript'
+Plugin 'google/yapf', { 'rtp': 'plugins/vim' }
 " Plugin 'SirVer/ultisnips'
 call vundle#end()
 
@@ -50,13 +52,25 @@ autocmd FileType python set sw=4
 autocmd FileType python set ts=4
 autocmd FileType python set sts=4
 
+syntax on
+filetype indent plugin on
+colorscheme palenight
+hi Visual term=reverse cterm=reverse guibg=Grey
 set foldmethod=indent
 set foldlevel=99
 set nocompatible
 set number
 set background=dark
+set smarttab
 set cindent
 set backspace=indent,eol,start   "  Make backspace work better 
+set ai
+set ts=4
+set sts=4
+set et
+set sw=4
+set textwidth=79
+
 
 if (has("termguicolors"))
   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
@@ -64,10 +78,6 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
-syntax on
-filetype indent plugin on
-colorscheme palenight
-hi Visual term=reverse cterm=reverse guibg=Grey
 
 " --- YouCompleteMe; As recommended for django.
 let g:ycm_collect_identifiers_from_tags_files = 1 	" Let YCM read tags from Ctags file
