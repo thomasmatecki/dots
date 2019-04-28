@@ -16,10 +16,11 @@ Plugin 'chrisbra/csv.vim'
 Plugin 'rust-lang/rust.vim'
 Plugin 'posva/vim-vue'
 Plugin 'pangloss/vim-javascript'
-Plugin 'google/yapf', { 'rtp': 'plugins/vim' }
 " Plugin 'SirVer/ultisnips'
 Plugin 'SkyLeach/pudb.vim'
 Plugin 'google/yapf', { 'rtp': 'plugins/vim' }
+Plugin 'plytophogy/vim-virtualenv'
+Plugin 'maksimr/vim-jsbeautify'
 call vundle#end()
 
 " ---
@@ -30,6 +31,9 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " --- YAPF formatter
 map <C-Y> :call yapf#YAPF()<cr>
 imap <C-Y> <c-o>:call yapf#YAPF()<cr>
+
+" --- JSBeautify
+map <c-f> :call JsBeautify()<cr>
 
 " --- 
 nnoremap <Space> a_<Esc>r
