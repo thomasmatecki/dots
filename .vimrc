@@ -19,7 +19,6 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'google/yapf', { 'rtp': 'plugins/vim' }
 " Plugin 'SirVer/ultisnips'
 Plugin 'SkyLeach/pudb.vim'
-Plugin 'google/yapf', { 'rtp': 'plugins/vim' }
 call vundle#end()
 
 " ---
