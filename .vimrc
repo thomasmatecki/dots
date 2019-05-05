@@ -21,6 +21,7 @@ Plugin 'SkyLeach/pudb.vim'
 Plugin 'google/yapf', { 'rtp': 'plugins/vim' }
 Plugin 'plytophogy/vim-virtualenv'
 Plugin 'maksimr/vim-jsbeautify'
+Plugin 'leafgarland/typescript-vim'
 call vundle#end()
 
 " ---
