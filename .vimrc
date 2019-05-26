@@ -18,10 +18,11 @@ Plugin 'posva/vim-vue'
 Plugin 'pangloss/vim-javascript'
 " Plugin 'SirVer/ultisnips'
 Plugin 'SkyLeach/pudb.vim'
-Plugin 'google/yapf', { 'rtp': 'plugins/vim' }
+" Plugin 'google/yapf', { 'rtp': 'plugins/vim' }
 Plugin 'plytophogy/vim-virtualenv'
 Plugin 'maksimr/vim-jsbeautify'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 call vundle#end()
 
 " ---
@@ -81,7 +82,11 @@ set sts=4
 set et
 set sw=4
 set textwidth=79
+let python_highlight_all = 1
 
+set cursorline
+
+set showmatch
 
 if (has("termguicolors"))
   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
