@@ -4,6 +4,7 @@
 !.tmux.conf
 !.vimrc
 !.emacs
+!.bashrc
 
 # libs etc
 !.vim/

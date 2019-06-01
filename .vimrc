@@ -3,7 +3,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 " --- Plugins
 call vundle#begin()
 Plugin 'Vundle/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'drewtempelmeyer/palenight.vim'
 Plugin 'vim-scripts/indentpython.vim'
@@ -17,12 +17,13 @@ Plugin 'rust-lang/rust.vim'
 Plugin 'posva/vim-vue'
 Plugin 'pangloss/vim-javascript'
 " Plugin 'SirVer/ultisnips'
-Plugin 'SkyLeach/pudb.vim'
+" Plugin 'SkyLeach/pudb.vim'
 " Plugin 'google/yapf', { 'rtp': 'plugins/vim' }
 Plugin 'plytophogy/vim-virtualenv'
 Plugin 'maksimr/vim-jsbeautify'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+Plugin 'mustache/vim-mustache-handlebars'
 call vundle#end()
 
 " ---
