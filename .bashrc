@@ -11,7 +11,6 @@ export NVM_DIR="$HOME/.nvm"
 # For flutter
 export PATH=~/flutter/bin:$PATH
 export PATH=$PATH:$HOME/.pub-cache/bin
-
 export SPARK_HOME=/usr/local/spark
 
 parse_git_branch() {
@@ -56,3 +55,7 @@ alias r="ranger"
 alias gl="git log --oneline --graph --color"
 alias gs="git status"
 alias c="clear"
+
+alias apon="blueutil --connect 7c-9a-1d-c0-37-a9"
+alias apoff="blueutil --disconnect 7c-9a-1d-c0-37-a9"
+
